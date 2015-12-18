@@ -1,10 +1,4 @@
-//
-//  AppDelegate.swift
-//  Plughole
-//
-//  Created by Amy Wichelow (i7683807) on 23/11/2015.
-//  Copyright © 2015 Amy Wichelow (i7683807). All rights reserved.
-//
+
 
 import UIKit
 
