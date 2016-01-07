@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -175,10 +175,13 @@
                     <navigationItem key="navigationItem" id="yQl-om-q6r">
                         <barButtonItem key="rightBarButtonItem" title="Item" id="7g5-wz-apu">
                             <connections>
-                                <segue destination="yPF-e2-tpE" kind="show" id="z91-Z0-WpZ"/>
+                                <segue destination="yPF-e2-tpE" kind="show" identifier="AnimalDetail" id="z91-Z0-WpZ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapImage" destination="DqK-p6-Ouc" id="7lL-rf-Yiy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dba-OI-cPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,35 +202,49 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seaBackground" translatesAutoresizingMaskIntoConstraints="NO" id="GjM-ku-fGL">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: Shark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgh-30-K1Y">
-                                <rect key="frame" x="20" y="72" width="560" height="27"/>
+                            <view opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hMX-ep-i1y">
+                                <rect key="frame" x="20" y="107" width="560" height="361"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZrP-Mh-a46">
+                                        <rect key="frame" x="160" y="200" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="GYy-mC-OVM"/>
+                                            <constraint firstAttribute="height" constant="128" id="Lvg-BH-jbe"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.36765396653384746" green="0.87480734735328092" blue="0.94105113636363635" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="xaO-WF-vYb"/>
+                                    <constraint firstItem="ZrP-Mh-a46" firstAttribute="centerX" secondItem="hMX-ep-i1y" secondAttribute="centerX" id="OOS-Ic-Bak"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZrP-Mh-a46" secondAttribute="bottom" constant="33" id="gAn-H6-hig"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: Shark" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgh-30-K1Y">
+                                <rect key="frame" x="20" y="124" width="560" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="waM-iL-iQU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.024767993271399995" green="0.23273662404648918" blue="0.54401436237373735" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size: 100cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeG-VA-fr6">
-                                <rect key="frame" x="20" y="118" width="560" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="n3t-Sa-whS"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="167" width="560" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocean" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zK-tG-myU">
-                                <rect key="frame" x="20" y="159" width="560" height="27"/>
+                                <rect key="frame" x="20" y="210" width="560" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="Xwq-Hg-KAd"/>
+                                    <constraint firstAttribute="height" constant="27" id="Giq-3D-2ju"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIg-jm-oXL">
-                                <rect key="frame" x="20" y="203" width="560" height="27"/>
+                                <rect key="frame" x="20" y="253" width="560" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -235,27 +252,33 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="GjM-ku-fGL" secondAttribute="trailing" id="117-m3-Fbf"/>
-                            <constraint firstItem="SeG-VA-fr6" firstAttribute="leading" secondItem="8zK-tG-myU" secondAttribute="leading" id="22a-wZ-K0v"/>
-                            <constraint firstItem="8zK-tG-myU" firstAttribute="top" secondItem="SeG-VA-fr6" secondAttribute="bottom" constant="14" id="AaE-c4-akd"/>
-                            <constraint firstItem="qgh-30-K1Y" firstAttribute="trailing" secondItem="SeG-VA-fr6" secondAttribute="trailing" id="EKs-nE-wSP"/>
-                            <constraint firstItem="GjM-ku-fGL" firstAttribute="centerY" secondItem="Ws8-9O-0Wx" secondAttribute="centerY" id="HUT-IB-EQ2"/>
-                            <constraint firstItem="SeG-VA-fr6" firstAttribute="leading" secondItem="qgh-30-K1Y" secondAttribute="leading" id="Hvo-yC-1dp"/>
-                            <constraint firstItem="GjM-ku-fGL" firstAttribute="leading" secondItem="Ws8-9O-0Wx" secondAttribute="leading" id="Iek-oQ-ZsQ"/>
-                            <constraint firstItem="xIg-jm-oXL" firstAttribute="leading" secondItem="8zK-tG-myU" secondAttribute="leading" id="J5P-D2-s7A"/>
-                            <constraint firstItem="8zK-tG-myU" firstAttribute="centerX" secondItem="GjM-ku-fGL" secondAttribute="centerX" id="SgP-dz-yyI"/>
-                            <constraint firstItem="xIg-jm-oXL" firstAttribute="leading" secondItem="Ws8-9O-0Wx" secondAttribute="leadingMargin" id="Vbe-eO-pbW"/>
-                            <constraint firstItem="8zK-tG-myU" firstAttribute="trailing" secondItem="SeG-VA-fr6" secondAttribute="trailing" id="WO7-vR-DWf"/>
-                            <constraint firstItem="8zK-tG-myU" firstAttribute="trailing" secondItem="xIg-jm-oXL" secondAttribute="trailing" id="aUc-wZ-fQT"/>
-                            <constraint firstItem="SeG-VA-fr6" firstAttribute="top" secondItem="qgh-30-K1Y" secondAttribute="bottom" constant="19" id="goC-bz-3ui"/>
-                            <constraint firstItem="xIg-jm-oXL" firstAttribute="top" secondItem="8zK-tG-myU" secondAttribute="bottom" constant="17" id="iN3-gF-933"/>
-                            <constraint firstItem="GjM-ku-fGL" firstAttribute="top" secondItem="Ws8-9O-0Wx" secondAttribute="topMargin" id="oaC-gz-yka"/>
-                            <constraint firstItem="Zsg-z9-9zD" firstAttribute="top" secondItem="xIg-jm-oXL" secondAttribute="bottom" constant="321" id="pXU-S9-guI"/>
-                            <constraint firstItem="qgh-30-K1Y" firstAttribute="top" secondItem="69e-LE-yPX" secondAttribute="bottom" constant="8" symbolic="YES" id="r70-tt-pZb"/>
+                            <constraint firstItem="SeG-VA-fr6" firstAttribute="trailing" secondItem="qgh-30-K1Y" secondAttribute="trailing" id="0Wq-r2-RRZ"/>
+                            <constraint firstItem="qgh-30-K1Y" firstAttribute="top" secondItem="69e-LE-yPX" secondAttribute="bottom" constant="60" id="Aja-zo-4MK"/>
+                            <constraint firstItem="8zK-tG-myU" firstAttribute="top" secondItem="SeG-VA-fr6" secondAttribute="bottom" constant="16" id="BBK-1b-Kct"/>
+                            <constraint firstItem="qgh-30-K1Y" firstAttribute="leading" secondItem="Ws8-9O-0Wx" secondAttribute="leadingMargin" id="BIb-O7-bar"/>
+                            <constraint firstItem="Zsg-z9-9zD" firstAttribute="top" secondItem="hMX-ep-i1y" secondAttribute="bottom" constant="83" id="Cbc-Sq-qH5"/>
+                            <constraint firstItem="qgh-30-K1Y" firstAttribute="trailing" secondItem="Ws8-9O-0Wx" secondAttribute="trailingMargin" id="Gnk-s5-EQv"/>
+                            <constraint firstItem="SeG-VA-fr6" firstAttribute="trailing" secondItem="8zK-tG-myU" secondAttribute="trailing" id="H2d-na-UUb"/>
+                            <constraint firstItem="hMX-ep-i1y" firstAttribute="leading" secondItem="Ws8-9O-0Wx" secondAttribute="leading" constant="20" id="JVT-OV-x33"/>
+                            <constraint firstItem="SeG-VA-fr6" firstAttribute="trailing" secondItem="hMX-ep-i1y" secondAttribute="trailing" id="KxI-de-k4t"/>
+                            <constraint firstItem="SeG-VA-fr6" firstAttribute="top" secondItem="qgh-30-K1Y" secondAttribute="bottom" constant="16" id="LeY-ZT-8Rb"/>
+                            <constraint firstItem="xIg-jm-oXL" firstAttribute="top" secondItem="8zK-tG-myU" secondAttribute="bottom" constant="16" id="ODf-tI-ypH"/>
+                            <constraint firstItem="GjM-ku-fGL" firstAttribute="leading" secondItem="Ws8-9O-0Wx" secondAttribute="leading" id="OLm-Kc-2qd"/>
+                            <constraint firstItem="SeG-VA-fr6" firstAttribute="leading" secondItem="qgh-30-K1Y" secondAttribute="leading" id="RKA-a6-O4B"/>
+                            <constraint firstItem="SeG-VA-fr6" firstAttribute="leading" secondItem="8zK-tG-myU" secondAttribute="leading" id="VIr-MF-B5g"/>
+                            <constraint firstItem="8zK-tG-myU" firstAttribute="top" secondItem="Ws8-9O-0Wx" secondAttribute="top" constant="210" id="W6f-UP-4jD"/>
+                            <constraint firstAttribute="bottom" secondItem="GjM-ku-fGL" secondAttribute="bottom" id="ZC2-MJ-d1Z"/>
+                            <constraint firstItem="Zsg-z9-9zD" firstAttribute="top" secondItem="xIg-jm-oXL" secondAttribute="bottom" constant="271" id="bOj-2X-NDI"/>
+                            <constraint firstItem="8zK-tG-myU" firstAttribute="leading" secondItem="xIg-jm-oXL" secondAttribute="leading" id="bdn-cW-EGL"/>
+                            <constraint firstItem="qgh-30-K1Y" firstAttribute="centerX" secondItem="GjM-ku-fGL" secondAttribute="centerX" id="cHD-ok-Usn"/>
+                            <constraint firstItem="8zK-tG-myU" firstAttribute="trailing" secondItem="xIg-jm-oXL" secondAttribute="trailing" id="fgJ-fn-8p2"/>
+                            <constraint firstItem="GjM-ku-fGL" firstAttribute="top" secondItem="Ws8-9O-0Wx" secondAttribute="top" id="mJd-5h-hyI"/>
+                            <constraint firstItem="hMX-ep-i1y" firstAttribute="top" secondItem="69e-LE-yPX" secondAttribute="bottom" constant="43" id="nRE-aW-XIK"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="countryLabel" destination="xIg-jm-oXL" id="ytk-Sb-Dpj"/>
+                        <outlet property="fishImage" destination="ZrP-Mh-a46" id="dcv-Lb-cvm"/>
                         <outlet property="nameLable" destination="qgh-30-K1Y" id="c8B-0T-ser"/>
                         <outlet property="oceanLabel" destination="8zK-tG-myU" id="2T8-vM-z4z"/>
                         <outlet property="sizeLabel" destination="SeG-VA-fr6" id="CoA-5q-r8L"/>
@@ -263,7 +286,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g0Y-qY-uV9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3496" y="414"/>
+            <point key="canvasLocation" x="4260" y="-338"/>
         </scene>
         <!--About Page View Controller-->
         <scene sceneID="iaG-tw-XdE">
@@ -280,48 +303,58 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seaBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gKl-iV-ho6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plugholeBanner" translatesAutoresizingMaskIntoConstraints="NO" id="rfQ-lo-mXW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="plugholeBanner" translatesAutoresizingMaskIntoConstraints="NO" id="rfQ-lo-mXW">
                                 <rect key="frame" x="42" y="28" width="517" height="128"/>
                                 <color key="backgroundColor" red="0.16888768904680632" green="0.56037905376981556" blue="0.58197206439393945" alpha="0.0" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7H-kf-pl2">
-                                <rect key="frame" x="42" y="180" width="517" height="349"/>
-                                <color key="backgroundColor" red="0.17254901960784313" green="0.47058823529411764" blue="0.61960784313725492" alpha="0.34000000000000002" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">“Plughole” is an application which displays information about the animals within Bournemouth Oceanarium. It is part of a geocache which was left by a woman named Christina in 2015 which contained information about the maltreatment of the animals. Since then, the Oceanarium has significantly improved its conditions and you are able to see these difference as you wonder around the building. 
+                            <view opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="RbN-NO-hao">
+                                <rect key="frame" x="20" y="174" width="560" height="361"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r7H-kf-pl2">
+                                        <rect key="frame" x="22" y="6" width="517" height="349"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">“Plughole” is an application which displays information about the animals within Bournemouth Oceanarium. It is part of a geocache which was left by a woman named Christina in 2015 which contained information about the maltreatment of the animals. Since then, the Oceanarium has significantly improved its conditions and you are able to see these difference as you wonder around the building. 
 </string>
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="19" name="HelveticaNeue"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">This app aims to support the animals within the Oceanarium, and various other Aquaria companies. The donation page enables you to select an amount you wish to donate to the “BIAZA KEEPERS OF THE WILD CAMPAIGN” which Bournemouth are involved with donating to. </string>
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="19" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">This app aims to support the animals within the Oceanarium, and various other Aquaria companies. The donation page enables you to select an amount you wish to donate to the “BIAZA KEEPERS OF THE WILD CAMPAIGN” which Bournemouth are involved with donating to. </string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.36765396649999998" green="0.87480734739999999" blue="0.94105113640000004" alpha="0.56000000000000005" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="r7H-kf-pl2" firstAttribute="top" secondItem="RbN-NO-hao" secondAttribute="top" constant="6" id="8Ek-de-iio"/>
+                                    <constraint firstItem="r7H-kf-pl2" firstAttribute="leading" secondItem="RbN-NO-hao" secondAttribute="leading" constant="22" id="8lN-I2-BdY"/>
+                                    <constraint firstItem="r7H-kf-pl2" firstAttribute="centerX" secondItem="RbN-NO-hao" secondAttribute="centerX" id="uHh-rT-4z0"/>
+                                    <constraint firstItem="r7H-kf-pl2" firstAttribute="centerY" secondItem="RbN-NO-hao" secondAttribute="centerY" id="wIA-Hd-Jtf"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.10107341964336226" green="0.66115547954448506" blue="0.6911300505050505" alpha="0.48999999999999999" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="r7H-kf-pl2" firstAttribute="top" secondItem="30C-Ra-NaC" secondAttribute="bottom" constant="160" id="7kh-ZP-och"/>
-                            <constraint firstItem="0tR-TR-lPU" firstAttribute="top" secondItem="r7H-kf-pl2" secondAttribute="bottom" constant="22" id="Foq-dX-Clv"/>
+                            <constraint firstItem="RbN-NO-hao" firstAttribute="centerX" secondItem="rfQ-lo-mXW" secondAttribute="centerX" id="0Tt-b6-jxu"/>
+                            <constraint firstItem="0tR-TR-lPU" firstAttribute="top" secondItem="RbN-NO-hao" secondAttribute="bottom" constant="16" id="HdV-XU-E9B"/>
                             <constraint firstItem="rfQ-lo-mXW" firstAttribute="top" secondItem="30C-Ra-NaC" secondAttribute="bottom" constant="8" symbolic="YES" id="QnY-pg-VRU"/>
+                            <constraint firstItem="RbN-NO-hao" firstAttribute="centerX" secondItem="gKl-iV-ho6" secondAttribute="centerX" id="RTd-Lw-7Y1"/>
                             <constraint firstItem="gKl-iV-ho6" firstAttribute="centerY" secondItem="iV3-IS-BCf" secondAttribute="centerY" id="Rp4-rs-PUr"/>
                             <constraint firstItem="gKl-iV-ho6" firstAttribute="top" secondItem="iV3-IS-BCf" secondAttribute="topMargin" id="Y79-pc-UJV"/>
-                            <constraint firstItem="r7H-kf-pl2" firstAttribute="centerX" secondItem="gKl-iV-ho6" secondAttribute="centerX" id="a07-2v-uBu"/>
-                            <constraint firstItem="rfQ-lo-mXW" firstAttribute="trailing" secondItem="r7H-kf-pl2" secondAttribute="trailing" id="cCy-AV-1Rw"/>
-                            <constraint firstItem="r7H-kf-pl2" firstAttribute="leading" secondItem="iV3-IS-BCf" secondAttribute="leadingMargin" constant="22" id="dWu-W3-Qct"/>
-                            <constraint firstItem="r7H-kf-pl2" firstAttribute="centerX" secondItem="iV3-IS-BCf" secondAttribute="centerX" id="fgr-VM-Krs"/>
+                            <constraint firstItem="RbN-NO-hao" firstAttribute="leading" secondItem="iV3-IS-BCf" secondAttribute="leadingMargin" id="ZqQ-9m-Ixu"/>
+                            <constraint firstItem="RbN-NO-hao" firstAttribute="trailing" secondItem="iV3-IS-BCf" secondAttribute="trailingMargin" id="aKd-Gz-Fgt"/>
+                            <constraint firstItem="RbN-NO-hao" firstAttribute="top" secondItem="iV3-IS-BCf" secondAttribute="top" constant="174" id="dsx-jY-PzD"/>
+                            <constraint firstItem="RbN-NO-hao" firstAttribute="top" secondItem="rfQ-lo-mXW" secondAttribute="bottom" constant="18" id="e3N-Xb-DKL"/>
                             <constraint firstItem="gKl-iV-ho6" firstAttribute="leading" secondItem="iV3-IS-BCf" secondAttribute="leading" id="i2W-LV-6wk"/>
-                            <constraint firstItem="r7H-kf-pl2" firstAttribute="top" secondItem="rfQ-lo-mXW" secondAttribute="bottom" constant="24" id="rzg-O4-0Ew"/>
-                            <constraint firstItem="rfQ-lo-mXW" firstAttribute="leading" secondItem="r7H-kf-pl2" secondAttribute="leading" id="zTc-oM-jt4"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="aboutIcon" id="3KZ-sZ-NK0">
@@ -335,7 +368,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="0fc-j5-31B">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tf4-m3-m39" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="vR3-gG-IXH" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="ywp-5d-DVV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -349,6 +381,7 @@
                         <segue destination="A3f-lQ-tTn" kind="relationship" relationship="viewControllers" id="pXq-Ag-ESs"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tf4-m3-m39" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1856" y="414"/>
         </scene>
