@@ -303,10 +303,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seaBackground" translatesAutoresizingMaskIntoConstraints="NO" id="gKl-iV-ho6">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="plugholeBanner" translatesAutoresizingMaskIntoConstraints="NO" id="rfQ-lo-mXW">
-                                <rect key="frame" x="42" y="28" width="517" height="128"/>
-                                <color key="backgroundColor" red="0.16888768904680632" green="0.56037905376981556" blue="0.58197206439393945" alpha="0.0" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <view opaque="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="RbN-NO-hao">
                                 <rect key="frame" x="20" y="174" width="560" height="361"/>
                                 <subviews>
@@ -344,16 +340,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.10107341964336226" green="0.66115547954448506" blue="0.6911300505050505" alpha="0.48999999999999999" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="RbN-NO-hao" firstAttribute="centerX" secondItem="rfQ-lo-mXW" secondAttribute="centerX" id="0Tt-b6-jxu"/>
                             <constraint firstItem="0tR-TR-lPU" firstAttribute="top" secondItem="RbN-NO-hao" secondAttribute="bottom" constant="16" id="HdV-XU-E9B"/>
-                            <constraint firstItem="rfQ-lo-mXW" firstAttribute="top" secondItem="30C-Ra-NaC" secondAttribute="bottom" constant="8" symbolic="YES" id="QnY-pg-VRU"/>
                             <constraint firstItem="RbN-NO-hao" firstAttribute="centerX" secondItem="gKl-iV-ho6" secondAttribute="centerX" id="RTd-Lw-7Y1"/>
                             <constraint firstItem="gKl-iV-ho6" firstAttribute="centerY" secondItem="iV3-IS-BCf" secondAttribute="centerY" id="Rp4-rs-PUr"/>
                             <constraint firstItem="gKl-iV-ho6" firstAttribute="top" secondItem="iV3-IS-BCf" secondAttribute="topMargin" id="Y79-pc-UJV"/>
                             <constraint firstItem="RbN-NO-hao" firstAttribute="leading" secondItem="iV3-IS-BCf" secondAttribute="leadingMargin" id="ZqQ-9m-Ixu"/>
                             <constraint firstItem="RbN-NO-hao" firstAttribute="trailing" secondItem="iV3-IS-BCf" secondAttribute="trailingMargin" id="aKd-Gz-Fgt"/>
                             <constraint firstItem="RbN-NO-hao" firstAttribute="top" secondItem="iV3-IS-BCf" secondAttribute="top" constant="174" id="dsx-jY-PzD"/>
-                            <constraint firstItem="RbN-NO-hao" firstAttribute="top" secondItem="rfQ-lo-mXW" secondAttribute="bottom" constant="18" id="e3N-Xb-DKL"/>
                             <constraint firstItem="gKl-iV-ho6" firstAttribute="leading" secondItem="iV3-IS-BCf" secondAttribute="leading" id="i2W-LV-6wk"/>
                         </constraints>
                     </view>
@@ -465,7 +458,6 @@
         <image name="penguinFlag" width="603" height="394"/>
         <image name="plugLong" width="338" height="280"/>
         <image name="plughole" width="228" height="205"/>
-        <image name="plugholeBanner" width="371" height="139"/>
         <image name="seaBackground" width="750" height="1280"/>
         <image name="splashScreen" width="751" height="1335"/>
     </resources>

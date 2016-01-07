@@ -61,6 +61,15 @@ func buildAnimals() -> [Animal] {
     let spinyLobster = Animal(name: "Spiny Lobster", size: "Up to 60cm", location: .Invertebrates, ocean: "Atlantic & Mediterranean", country: "Norway to Morroco")
     animals.append(spinyLobster)
     
+    let africanMudTurtle = Animal (name: "African Mud Turtle", size: "Up to 30cm", location: .Turtles, ocean: "The Amazon", country: "Africa")
+    animals.append(africanMudTurtle)
+    let greenSeaTurtle = Animal (name: "Green Sea Turtle", size: "Over 100cm", location: .Turtles, ocean: "Atlantic, Indian & Indo-Pacific", country: "Coastal waters of over 140 countries")
+    animals.append(greenSeaTurtle)
+    let pigNosedTurtle = Animal (name: "Pig Nosed Turtle", size: "Up to 30cm", location: .Turtles, ocean: "The Great Barrier Reef", country: "Australia & New Guinea")
+    animals.append(pigNosedTurtle)
+
+    
+    
     return animals
 }
 
