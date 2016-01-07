@@ -72,9 +72,11 @@ func buildAnimals() -> [Animal] {
     animals.append(africanDwarfCrocodile)
     let chineseWaterDragon = Animal(name: "Chinese Water Dragon", size: "Up to 100cm", location: .OtherReptiles, ocean: "Africa & the Ganges", country: "India, China & Asia")
     animals.append(chineseWaterDragon)
-    let greenIguana = Animal(name: "Green Iguana", size: "Up to 200cm", location: .OtherReptiles, ocean: "The Amazon", country: "Mexico, Central America, the Caribbean Islands & Brazil")
+    let greenIguana = Animal(name: "Green Iguana", size: "Up to 200cm", location: .OtherReptiles, ocean: "The Amazon", country: "America & the Caribbean Islands")
     animals.append(greenIguana)
     
+    let humboldtPenguin = Animal (name: "Humboldt Penguin", size: "56 - 70cm", location: .Birds, ocean: "Pacific", country: "Chile & Peru")
+    animals.append(humboldtPenguin)
     
     return animals
 }

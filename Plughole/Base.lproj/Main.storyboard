@@ -352,6 +352,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="aboutIcon" id="3KZ-sZ-NK0">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
                 </viewController>
@@ -397,7 +398,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="listIcon" id="aFH-JZ-ckT"/>
+                    <tabBarItem key="tabBarItem" title="" image="listIcon" id="aFH-JZ-ckT">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acz-af-ZBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -421,7 +424,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="donateIcon" id="zfZ-HJ-iCS"/>
+                    <tabBarItem key="tabBarItem" title="" image="donateIcon" id="zfZ-HJ-iCS">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f92-uu-4u5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -431,7 +436,9 @@
         <scene sceneID="tHB-ht-6ow">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q2x-H4-hbv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="homeIcon" id="bmH-6h-LRd"/>
+                    <tabBarItem key="tabBarItem" title="" image="homeIcon" id="bmH-6h-LRd">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="J21-ES-68W">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

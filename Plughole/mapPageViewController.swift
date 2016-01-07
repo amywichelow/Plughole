@@ -8,7 +8,7 @@ import UIKit
 
 class mapPageViewController: UIViewController {
 
-    var userLocation = Location.OtherReptiles
+    var userLocation = Location.Birds
     @IBOutlet weak var mapImage: UIImageView!
     
     override func viewDidLoad() {
