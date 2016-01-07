@@ -8,7 +8,7 @@ class splashScreenViewController: UIViewController {
     
     let locationManager = CLLocationManager()
 
-    let animals = filterAnimalsByLocation(2)
+    let animals = filterAnimalsByLocation(.Invertebrates)
     
     override func viewDidLoad() {
         super.viewDidLoad()
