@@ -20,15 +20,15 @@ class mapPageViewController: UIViewController {
     
         switch userLocation {
         case .Fish:
-            mapImage.image = UIImage(named: "")
+            mapImage.image = UIImage(named: "mapfish")
         case .Turtles:
-            mapImage.image = UIImage(named: "")
+            mapImage.image = UIImage(named: "mapturtle")
         case .Invertebrates:
-            mapImage.image = UIImage(named: "")
+            mapImage.image = UIImage(named: "mapinverterbrates")
         case .Birds:
-            mapImage.image = UIImage(named: "")
+            mapImage.image = UIImage(named: "mapbird")
         case .OtherReptiles:
-            mapImage.image = UIImage(named: "")
+            mapImage.image = UIImage(named: "mapotherreptiles")
         }
         
     }
@@ -39,10 +39,7 @@ class mapPageViewController: UIViewController {
             let vc = segue.destinationViewController as! animalDetailViewController
             vc.animalLocation = userLocation
         }
-        
-        
+      
+    
     }
-    
-    
 }
- 
