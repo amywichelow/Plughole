@@ -9,7 +9,6 @@ class Animal {
     var country: String!
     
     
-    //var legs: Int!
     
     init(name: String, size: String, location: Location, ocean: String, country: String) {
         self.name = name
@@ -18,8 +17,7 @@ class Animal {
         self.ocean = ocean
         self.country = country
         
-        //if let legs = legs {
-            //self.legs = legs}
+        
         }
     }
     

@@ -7,20 +7,25 @@ class splashScreenViewController: UIViewController {
     
     
     let locationManager = CLLocationManager()
+    
+   
 
     let animals = filterAnimalsByLocation(.Invertebrates)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.AuthorizedWhenInUse) {
         locationManager.requestWhenInUseAuthorization()
+        }
+        
+        
         
         
         for animal in animals {
             print(animal.name)
             
-            //if let legs = animal.legs {
-                //print(legs)}
+        
             
         }
         

@@ -9,7 +9,7 @@ class aboutPageViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
+
         
     }
 
