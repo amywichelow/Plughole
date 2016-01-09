@@ -12,6 +12,7 @@ class animalDetailViewController: UIViewController {
     @IBOutlet weak var oceanLabel: UILabel!
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var fishImage: UIImageView!
+    @IBOutlet weak var specieImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +60,7 @@ class animalDetailViewController: UIViewController {
         oceanLabel.text = animal.ocean
         countryLabel.text = animal.country
         fishImage.image = UIImage(named: animal.name)
+        specieImage.image = UIImage(named: animal.name + "Status")
     }
     
 }
