@@ -13,7 +13,7 @@ class mapPageViewController: UIViewController { //, CLLocationManagerDelegate {
 
     //let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "")!, identifier: "Estimotes")
 
-    var userLocation = Location.Fish
+    var userLocation = Location.Invertebrates
     @IBOutlet weak var mapImage: UIImageView!
     
     override func viewDidLoad() {

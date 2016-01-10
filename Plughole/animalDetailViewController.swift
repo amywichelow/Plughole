@@ -60,7 +60,7 @@ class animalDetailViewController: UIViewController {
         oceanLabel.text = animal.ocean
         countryLabel.text = animal.country
         fishImage.image = UIImage(named: animal.name)
-        specieImage.image = UIImage(named: animal.name + "Status")
+        specieImage.image = UIImage(named: animal.name+"Status")
     }
     
 }
