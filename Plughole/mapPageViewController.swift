@@ -5,6 +5,7 @@ enum Location: Int {
 
 
 import UIKit
+//import AudioToolbox
 //import CoreLocation
 
 class mapPageViewController: UIViewController { //, CLLocationManagerDelegate {
@@ -26,6 +27,8 @@ class mapPageViewController: UIViewController { //, CLLocationManagerDelegate {
     
     func updateView() {
         //ibeacon will trigger this to be called with some sort of number....
+        
+        //if in region AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
     
         switch userLocation {
         case .Fish:

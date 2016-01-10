@@ -294,6 +294,12 @@
                                     <constraint firstAttribute="width" secondItem="WH3-o7-x2L" secondAttribute="height" multiplier="254:131" constant="187.13740458015269" id="dsA-7T-IOQ"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to view this areas creatures..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="ZfP-19-4vo">
+                                <rect key="frame" x="11" y="84" width="362" height="27"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -308,11 +314,15 @@
                             <constraint firstItem="u8G-tH-a5s" firstAttribute="width" secondItem="u8G-tH-a5s" secondAttribute="height" multiplier="361:448" constant="49.959821428571445" id="JSz-6h-2wD"/>
                             <constraint firstItem="u8G-tH-a5s" firstAttribute="centerX" secondItem="Ws8-9O-0Wx" secondAttribute="centerX" id="Jdj-XH-CX5"/>
                             <constraint firstItem="SeG-VA-fr6" firstAttribute="top" secondItem="WH3-o7-x2L" secondAttribute="bottom" constant="21" id="Ndi-Yn-4Qg"/>
+                            <constraint firstItem="u8G-tH-a5s" firstAttribute="top" secondItem="ZfP-19-4vo" secondAttribute="bottom" constant="13" id="O81-Q6-eAo"/>
                             <constraint firstItem="SeG-VA-fr6" firstAttribute="trailing" secondItem="8zK-tG-myU" secondAttribute="trailing" id="P7y-kF-TXn"/>
                             <constraint firstItem="SeG-VA-fr6" firstAttribute="trailing" secondItem="qgh-30-K1Y" secondAttribute="trailing" id="PEY-a7-1eV"/>
                             <constraint firstItem="SeG-VA-fr6" firstAttribute="centerY" secondItem="Ws8-9O-0Wx" secondAttribute="centerY" constant="-18" id="RER-FJ-70p"/>
+                            <constraint firstItem="ZfP-19-4vo" firstAttribute="top" secondItem="69e-LE-yPX" secondAttribute="bottom" constant="20" id="Vii-1Y-gRS"/>
                             <constraint firstItem="ZrP-Mh-a46" firstAttribute="leading" secondItem="xIg-jm-oXL" secondAttribute="leading" id="Wo6-hi-qed"/>
+                            <constraint firstItem="ZfP-19-4vo" firstAttribute="leading" secondItem="qgh-30-K1Y" secondAttribute="leading" constant="-54" id="ZCG-6F-SqI"/>
                             <constraint firstItem="u8G-tH-a5s" firstAttribute="centerX" secondItem="bnz-8b-0xi" secondAttribute="centerX" id="ZZe-xs-cDH"/>
+                            <constraint firstItem="ZfP-19-4vo" firstAttribute="trailing" secondItem="qgh-30-K1Y" secondAttribute="trailing" constant="54" id="dvZ-R2-UIp"/>
                             <constraint firstItem="u8G-tH-a5s" firstAttribute="centerY" secondItem="bnz-8b-0xi" secondAttribute="centerY" constant="32" id="eFn-qF-FtZ"/>
                             <constraint firstItem="WH3-o7-x2L" firstAttribute="width" secondItem="WH3-o7-x2L" secondAttribute="height" multiplier="254:131" constant="187.13740458015269" id="g6H-jQ-0cX"/>
                             <constraint firstItem="ZrP-Mh-a46" firstAttribute="top" secondItem="xIg-jm-oXL" secondAttribute="bottom" constant="19" id="lCa-ED-BXP"/>
