@@ -2,45 +2,57 @@ enum Location: Int {
     case Fish = 1, Turtles, Invertebrates, Birds, OtherReptiles
 }
 
-
-
 import UIKit
-//import AudioToolbox
-//import CoreLocation
 
-class mapPageViewController: UIViewController { //, CLLocationManagerDelegate {
+class mapPageViewController: UIViewController {
     
-    //let locationManager = CLLocationManager()
 
-    //let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "")!, identifier: "Estimotes")
-
-    var userLocation = Location.Invertebrates
+    var userLocation: Location!
     @IBOutlet weak var mapImage: UIImageView!
+    
+    let beaconManager = ESTBeaconManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //locationManager.delegate = self
-        //locationManager.startRangingBeaconsInRegion(region)
+        beaconManager.delegate = self
+        beaconManager.requestAlwaysAuthorization()
+        
+        beaconManager.startMonitoringForRegion(CLBeaconRegion(
+            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
+            major: 4838, minor: 14161, identifier: "Fish"))
+        
+        beaconManager.startMonitoringForRegion(CLBeaconRegion(
+            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
+            major: 22081, minor: 17109, identifier: "Invertebrates"))
+        
+        beaconManager.startMonitoringForRegion(CLBeaconRegion(
+            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
+            major: 4023, minor: 59596, identifier: "OtherReptiles"))
+        
         
     }
     
-    func updateView() {
+    func updateView(area: Location) {
         //ibeacon will trigger this to be called with some sort of number....
         
-        //if in region AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
     
-        switch userLocation {
+        switch userLocation! {
         case .Fish:
             mapImage.image = UIImage(named: "mapfish")
+            userLocation = .Fish
         case .Turtles:
             mapImage.image = UIImage(named: "mapturtle")
+            userLocation = .Turtles
         case .Invertebrates:
             mapImage.image = UIImage(named: "mapinverterbrates")
+            userLocation = .Invertebrates
         case .Birds:
             mapImage.image = UIImage(named: "mapbird")
+            userLocation = .Birds
         case .OtherReptiles:
             mapImage.image = UIImage(named: "mapotherreptiles")
+            userLocation = .OtherReptiles
         }
         
     }
@@ -54,11 +66,27 @@ class mapPageViewController: UIViewController { //, CLLocationManagerDelegate {
       
     }
     
-    //func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
-        //let knownBeacons = beacons.filter{ $0.proximity != CLProximity.Unknown}
-        //if (knownBeacons.count > 0) {
-           // let closestBeacon = knownBeacons[0] as CLBeacon
-       // }
-   // }
+    
 }
 
+extension mapPageViewController: ESTBeaconManagerDelegate {
+    
+    func beaconManager(manager: AnyObject, didEnterRegion region: CLBeaconRegion) {
+        if region.identifier == "Fish" {
+            updateView(.Fish)
+        }
+        if region.identifier == "Invertebrates" {
+            updateView(.Invertebrates)
+        }
+        if region.identifier == "OtherReptiles" {
+            updateView(.OtherReptiles)
+        }
+        if region.identifier == "Turtles" {
+            updateView(.Turtles)
+        }
+        if region.identifier == "Birds" {
+            updateView(.Birds)
+        }
+    }
+
+}

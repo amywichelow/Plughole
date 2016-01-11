@@ -4,24 +4,13 @@ import MapKit
 
 class splashScreenViewController: UIViewController {
     
-    
-    
-    let locationManager = CLLocationManager()
-    
    
 
     let animals = filterAnimalsByLocation(.Invertebrates)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.AuthorizedWhenInUse) {
-        locationManager.requestWhenInUseAuthorization()
-        }
-        
-        
-        
-        
+
         for animal in animals {
             print(animal.name)
             
@@ -39,12 +28,13 @@ class splashScreenViewController: UIViewController {
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         
-        if CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse {
-            if motion == .MotionShake {
-                performSegueWithIdentifier("Enter", sender: self)
-                print("shaken")
-            }
+        
+        if motion == .MotionShake {
+            performSegueWithIdentifier("Enter", sender: self)
+            print("shaken")
         }
+        
+        
     }
 
     
