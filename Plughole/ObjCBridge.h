@@ -13,3 +13,5 @@
 #endif /* ObjCBridge_h */
 
 #import <EstimoteSDK/EstimoteSDK.h>
+
+//This is the ObjectiveC Bridge which imports the estimote software onto the project
