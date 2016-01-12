@@ -20,7 +20,6 @@
 		E42210DA1C03185700C33574 /* splashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42210D91C03185700C33574 /* splashScreenViewController.swift */; };
 		E42210DD1C03185700C33574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42210DB1C03185700C33574 /* Main.storyboard */; };
 		E42210E21C03185700C33574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42210E01C03185700C33574 /* LaunchScreen.storyboard */; };
-		E42210EB1C031EA300C33574 /* Location.gpx in Resources */ = {isa = PBXBuildFile; fileRef = E42210EA1C031EA300C33574 /* Location.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +41,6 @@
 		E42210DC1C03185700C33574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E42210E11C03185700C33574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E42210E31C03185700C33574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E42210E91C031E3400C33574 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
-		E42210EA1C031EA300C33574 /* Location.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Location.gpx; path = Plughole/Location.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +75,6 @@
 		E42210CB1C03185700C33574 = {
 			isa = PBXGroup;
 			children = (
-				E42210EA1C031EA300C33574 /* Location.gpx */,
 				E42210D61C03185700C33574 /* Plughole */,
 				E42210D51C03185700C33574 /* Products */,
 				8349A8386B9972F2EB0A0589 /* Pods */,
@@ -108,7 +104,6 @@
 				E18F33911C22FFF00020F1AE /* animalDetailViewController.swift */,
 				E1AC112B1C13859F00A0C232 /* aboutPageViewController.swift */,
 				E18F33931C238E7F0020F1AE /* listPageViewController.swift */,
-				E42210E91C031E3400C33574 /* Location.gpx */,
 				E42210E01C03185700C33574 /* LaunchScreen.storyboard */,
 				E42210E31C03185700C33574 /* Info.plist */,
 				E1FBA3311C440B9B00D060F3 /* Assets.xcassets */,
@@ -178,7 +173,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E42210E21C03185700C33574 /* LaunchScreen.storyboard in Resources */,
-				E42210EB1C031EA300C33574 /* Location.gpx in Resources */,
 				E42210DD1C03185700C33574 /* Main.storyboard in Resources */,
 				E1FBA3321C440B9B00D060F3 /* Assets.xcassets in Resources */,
 			);
