@@ -16,6 +16,7 @@
 		E18F33961C238EE50020F1AE /* donatePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18F33951C238EE50020F1AE /* donatePageViewController.swift */; };
 		E1AC112C1C13859F00A0C232 /* aboutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AC112B1C13859F00A0C232 /* aboutPageViewController.swift */; };
 		E1FBA3321C440B9B00D060F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1FBA3311C440B9B00D060F3 /* Assets.xcassets */; };
+		E1FC7E691C45744800EBF5CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FC7E681C45744800EBF5CF /* AVFoundation.framework */; };
 		E42210D81C03185700C33574 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42210D71C03185700C33574 /* AppDelegate.swift */; };
 		E42210DA1C03185700C33574 /* splashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42210D91C03185700C33574 /* splashScreenViewController.swift */; };
 		E42210DD1C03185700C33574 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42210DB1C03185700C33574 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		E19FFDFE1C43E7E700DF3799 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		E1AC112B1C13859F00A0C232 /* aboutPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aboutPageViewController.swift; sourceTree = "<group>"; };
 		E1FBA3311C440B9B00D060F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1FC7E681C45744800EBF5CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E42210D41C03185700C33574 /* Plughole.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plughole.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42210D71C03185700C33574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E42210D91C03185700C33574 /* splashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splashScreenViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1FC7E691C45744800EBF5CF /* AVFoundation.framework in Frameworks */,
 				A76D69C8213A572EAD513807 /* Pods_Plughole.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +70,7 @@
 		DBCDDACA55F4AA95934DD954 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1FC7E681C45744800EBF5CF /* AVFoundation.framework */,
 				20FA522AA0FD83630E96AC00 /* Pods_Plughole.framework */,
 			);
 			name = Frameworks;

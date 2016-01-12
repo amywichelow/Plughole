@@ -5,11 +5,13 @@ enum Location: Int {
 // enums
 
 import UIKit
-import AVFoundation
+//import AVFoundation
 import AudioToolbox
 //import necessary kits/frameworks
 
 class mapPageViewController: UIViewController {
+    
+    @IBOutlet weak var factButton: UIBarButtonItem!
     //links class to the map view controller
 
     var userLocation: Location!
@@ -28,6 +30,7 @@ class mapPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        factButton.enabled = false
         
         beaconManager.delegate = self
         beaconManager.requestAlwaysAuthorization()
@@ -58,7 +61,7 @@ class mapPageViewController: UIViewController {
         //ibeacon will trigger this to be called with some sort of number....
         
     
-        switch userLocation! {
+        switch area {
         case .Fish:
             mapImage.image = UIImage(named: "mapfish")
             userLocation = .Fish
@@ -104,37 +107,45 @@ class mapPageViewController: UIViewController {
 
 extension mapPageViewController: ESTBeaconManagerDelegate {
     
-    func beaconManager(manager: AnyObject, didEnterRegion region: CLBeaconRegion) {
+    func beaconManager(manager: AnyObject,
+        didEnterRegion region: CLBeaconRegion) {
+        print(region.identifier)
         if region.identifier == "Fish" {
             updateView(.Fish)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            AudioServicesPlaySystemSound (systemSoundID)
+            //AudioServicesPlaySystemSound (systemSoundID)
 
         }
         if region.identifier == "Invertebrates" {
             updateView(.Invertebrates)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            AudioServicesPlaySystemSound (systemSoundID)
+            //AudioServicesPlaySystemSound (systemSoundID)
 
         }
         if region.identifier == "OtherReptiles" {
             updateView(.OtherReptiles)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            AudioServicesPlaySystemSound (systemSoundID)
+            //AudioServicesPlaySystemSound (systemSoundID)
 
         }
         if region.identifier == "Turtles" {
             updateView(.Turtles)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            AudioServicesPlaySystemSound (systemSoundID)
+            //AudioServicesPlaySystemSound (systemSoundID)
 
         }
         if region.identifier == "Birds" {
             updateView(.Birds)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            AudioServicesPlaySystemSound (systemSoundID)
+            //AudioServicesPlaySystemSound (systemSoundID)
 
         }
+        factButton.enabled = true
+    }
+    
+    func beaconManager(manager: AnyObject, didExitRegion region: CLBeaconRegion) {
+        mapImage.image = UIImage(named: "mapAllDisabled")
+        factButton.enabled = false
     }
 
 }

@@ -40,6 +40,25 @@ class animalDetailViewController: UIViewController {
         updateView()
     }
     
+    @IBAction func fav(sender: AnyObject) {
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var faves = defaults.valueForKey("faves") as? [String]
+        
+        if faves == nil {
+            faves = [String]()
+        }
+        
+        print(faves!.count)
+        
+        if !faves!.contains(animals[counter].name) {
+            faves!.append(animals[counter].name)
+        }
+        
+        defaults.setValue(faves, forKey: "faves")
+        
+    }
+    
     func swipeRight() {
         if counter < animals.count - 1 {
             counter++

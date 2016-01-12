@@ -6,15 +6,8 @@ import MapKit
 
 class splashScreenViewController: UIViewController {
     
-   
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        
         
     }
     

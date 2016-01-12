@@ -219,6 +219,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="factButton" destination="7g5-wz-apu" id="4eU-q8-o2q"/>
                         <outlet property="mapImage" destination="DqK-p6-Ouc" id="7lL-rf-Yiy"/>
                     </connections>
                 </viewController>
@@ -333,6 +334,9 @@
                                 <state key="normal" title="Add to Favourites">
                                     <color key="titleColor" red="0.031372549019607843" green="0.15686274509803921" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="fav:" destination="yPF-e2-tpE" eventType="touchUpInside" id="Yhk-Mm-7za"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
