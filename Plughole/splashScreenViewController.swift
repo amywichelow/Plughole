@@ -2,28 +2,12 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class splashScreenViewController: UIViewController {
-    
-    
-    
-    let locationManager = CLLocationManager()
+//import necessary kits/frameworks
 
-    let animals = filterAnimalsByLocation(.Invertebrates)
+class splashScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        locationManager.requestWhenInUseAuthorization()
-        
-        
-        for animal in animals {
-            print(animal.name)
-            
-            //if let legs = animal.legs {
-                //print(legs)}
-            
-        }
-        
         
     }
     
@@ -34,22 +18,13 @@ class splashScreenViewController: UIViewController {
     
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         
-        if CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse {
-            if motion == .MotionShake {
-                performSegueWithIdentifier("Enter", sender: self)
-                print("shaken")
-            }
+        
+        if motion == .MotionShake {
+            performSegueWithIdentifier("Enter", sender: self)
+            print("shaken")
         }
-    }
-
-    
-    @IBAction func ShakeNotification(sender: AnyObject) {
-        
-        let AlertView = UIAlertController(title: "Start Exploring...", message: "Shake phone to enter", preferredStyle: UIAlertControllerStyle.Alert)
-        
-        self.presentViewController(AlertView, animated: true, completion: nil)
+     //This function allows the user to shake the iphone in order to gain access to the app and unless the phone is shaken then access is not granted.
         
     }
-    
-
 }
+

@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+//import necessary kits/frameworks
 
 class aboutPageViewController: UIViewController {
     
@@ -9,10 +10,12 @@ class aboutPageViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
+
         
     }
 
+    
+  
 
 
 }
