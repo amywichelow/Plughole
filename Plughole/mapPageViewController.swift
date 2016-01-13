@@ -5,7 +5,7 @@ enum Location: Int {
 // enums
 
 import UIKit
-//import AVFoundation
+import AVFoundation
 import AudioToolbox
 //import necessary kits/frameworks
 
@@ -18,6 +18,7 @@ class mapPageViewController: UIViewController {
     //creates a variable of user location equal to the location of animals
     
     let systemSoundID: SystemSoundID = 1016
+
     //references the 'tweet' iOS sound
     
     @IBOutlet weak var mapImage: UIImageView!
@@ -113,31 +114,35 @@ extension mapPageViewController: ESTBeaconManagerDelegate {
         if region.identifier == "Fish" {
             updateView(.Fish)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            //AudioServicesPlaySystemSound (systemSoundID)
+            AudioServicesPlaySystemSound (systemSoundID)
+
 
         }
         if region.identifier == "Invertebrates" {
             updateView(.Invertebrates)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            //AudioServicesPlaySystemSound (systemSoundID)
+            AudioServicesPlaySystemSound (systemSoundID)
+
 
         }
         if region.identifier == "OtherReptiles" {
             updateView(.OtherReptiles)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            //AudioServicesPlaySystemSound (systemSoundID)
+            AudioServicesPlaySystemSound (systemSoundID)
+
 
         }
         if region.identifier == "Turtles" {
             updateView(.Turtles)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            //AudioServicesPlaySystemSound (systemSoundID)
+            AudioServicesPlaySystemSound (systemSoundID)
+
 
         }
         if region.identifier == "Birds" {
             updateView(.Birds)
             //this tells the app to update when entering the new region and will change the array and map image shown
-            //AudioServicesPlaySystemSound (systemSoundID)
+            AudioServicesPlaySystemSound (systemSoundID)
 
         }
         factButton.enabled = true

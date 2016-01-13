@@ -45,6 +45,7 @@ class animalDetailViewController: UIViewController {
         let defaults = NSUserDefaults.standardUserDefaults()
         var faves = defaults.valueForKey("faves") as? [String]
         
+        
         if faves == nil {
             faves = [String]()
         }
@@ -54,6 +55,7 @@ class animalDetailViewController: UIViewController {
         if !faves!.contains(animals[counter].name) {
             faves!.append(animals[counter].name)
         }
+        
         
         defaults.setValue(faves, forKey: "faves")
         
