@@ -152,5 +152,7 @@ extension mapPageViewController: ESTBeaconManagerDelegate {
         mapImage.image = UIImage(named: "mapAllDisabled")
         factButton.enabled = false
     }
+    
+    //shows the all maps disabled image when no beacons are in region and disables the fact file button
 
 }

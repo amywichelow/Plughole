@@ -14,7 +14,7 @@ class aboutPageViewController: UIViewController {
         
     }
 
-    
+    //page which is on storyboard with text and a title explaining about the app and its geocache purpose.
   
 
 

@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cBB-S8-PbF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cBB-S8-PbF">
                                 <rect key="frame" x="0.0" y="-31" width="600" height="631"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="600" id="3Xd-PK-LOT"/>
@@ -70,6 +70,7 @@
                             <constraint firstItem="gVQ-yP-sya" firstAttribute="centerX" secondItem="cSE-Uj-xXe" secondAttribute="centerX" id="Py9-pl-f7Y"/>
                             <constraint firstItem="gVQ-yP-sya" firstAttribute="centerX" secondItem="cBB-S8-PbF" secondAttribute="centerX" id="bAy-rc-V4W"/>
                             <constraint firstItem="n5D-rK-wlI" firstAttribute="top" secondItem="cSE-Uj-xXe" secondAttribute="bottom" constant="-1" id="c7Q-Av-lqX"/>
+                            <constraint firstItem="cBB-S8-PbF" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="e5c-AO-Yps"/>
                             <constraint firstItem="cSE-Uj-xXe" firstAttribute="top" secondItem="gVQ-yP-sya" secondAttribute="bottom" constant="22" id="fnP-WB-GRH"/>
                             <constraint firstItem="gVQ-yP-sya" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="86" id="sGU-mg-x8M"/>
                         </constraints>
@@ -603,7 +604,7 @@ This app aims to support the animals within the Oceanarium, and various other Aq
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qeb-vz-2D6">
-                        <barButtonItem key="rightBarButtonItem" title="Reset" style="plain" id="6Qh-ic-Ged">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" style="done" id="6Qh-ic-Ged">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Aok-a7-WF3">
                                 <rect key="frame" x="447" y="7" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

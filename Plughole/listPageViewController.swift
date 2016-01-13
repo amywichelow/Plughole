@@ -16,6 +16,7 @@ class listPageViewController: UIViewController {
     @IBOutlet weak var fav4: UILabel!
     @IBOutlet weak var fav5: UILabel!
     
+    //links the 5 labels which will show the 5 chosen favourites
     
     @IBAction func reset(sender: AnyObject) {
         
@@ -38,6 +39,8 @@ class listPageViewController: UIViewController {
         
         
     }
+    
+    //reset button removes all variables from array in the favourites and clears them so they can be refilled with new favourites
     
     
     override func viewDidLoad() {
@@ -88,7 +91,7 @@ class listPageViewController: UIViewController {
             
         }
         
-        
+        //Displays the variable which the user has selected and it can be a single favourite or up to 5.
         
 
         

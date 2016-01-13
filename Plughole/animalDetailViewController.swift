@@ -49,6 +49,7 @@ class animalDetailViewController: UIViewController {
         if faves == nil {
             faves = [String]()
         }
+        //prevents crash due to first opening the app there being no favourites yet
         
         print(faves!.count)
         
@@ -60,6 +61,8 @@ class animalDetailViewController: UIViewController {
         defaults.setValue(faves, forKey: "faves")
         
     }
+    
+    //this button adds the current fact files animal name to a label in the favourties tab
     
     func swipeRight() {
         if counter < animals.count - 1 {
