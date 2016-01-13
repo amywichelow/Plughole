@@ -331,10 +331,18 @@
                                     <constraint firstAttribute="width" constant="242" id="gjw-N0-TKw"/>
                                     <constraint firstAttribute="width" secondItem="JFf-kG-Kn7" secondAttribute="height" multiplier="121:31" id="vR3-gh-o07"/>
                                 </constraints>
+<<<<<<< HEAD
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
                                 <color key="tintColor" red="0.65226195470000004" green="0.93295815630000001" blue="0.99815944369999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Add to Favourites">
                                     <color key="titleColor" red="0.02476799327" green="0.232736624" blue="0.54401436240000001" alpha="1" colorSpace="calibratedRGB"/>
+=======
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="18"/>
+                                <color key="tintColor" red="0.65226195470000004" green="0.93295815630000001" blue="0.99815944369999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add to Favourites">
+                                    <color key="titleColor" red="0.031372549019607843" green="0.15686274509803921" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+>>>>>>> origin/master
                                 </state>
                                 <connections>
                                     <action selector="fav:" destination="yPF-e2-tpE" eventType="touchUpInside" id="Yhk-Mm-7za"/>
@@ -528,60 +536,89 @@ This app aims to support the animals within the Oceanarium, and various other Aq
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EOz-WF-nrz">
+=======
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EOz-WF-nrz">
+>>>>>>> origin/master
                                 <rect key="frame" x="0.0" y="-42" width="600" height="635"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpU-AO-TEe">
                                 <rect key="frame" x="158" y="130" width="285" height="21"/>
                                 <constraints>
+<<<<<<< HEAD
                                     <constraint firstAttribute="width" constant="285" id="MJm-Qe-TM7"/>
                                     <constraint firstAttribute="width" secondItem="zpU-AO-TEe" secondAttribute="height" multiplier="95:7" id="jd7-eB-aPq"/>
                                     <constraint firstAttribute="height" constant="21" id="swa-NQ-cnM"/>
+=======
+                                    <constraint firstAttribute="height" constant="21" id="o8x-Ct-T0k"/>
+                                    <constraint firstAttribute="width" constant="285" id="yF4-oh-gLo"/>
+>>>>>>> origin/master
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqf-eU-Xsy">
+<<<<<<< HEAD
                                 <rect key="frame" x="158" y="199" width="285" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Ltp-0E-T9P"/>
                                     <constraint firstAttribute="width" secondItem="jqf-eU-Xsy" secondAttribute="height" multiplier="95:7" id="uh6-Dm-tb3"/>
                                     <constraint firstAttribute="width" constant="285" id="zDE-mM-NoN"/>
+=======
+                                <rect key="frame" x="158" y="208" width="285" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9ki-Ka-1x5"/>
+>>>>>>> origin/master
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozJ-nk-NBt">
+<<<<<<< HEAD
                                 <rect key="frame" x="158" y="265" width="285" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="OoA-oP-j4H"/>
                                     <constraint firstAttribute="width" secondItem="ozJ-nk-NBt" secondAttribute="height" multiplier="95:7" id="iRm-An-WyH"/>
                                     <constraint firstAttribute="height" constant="21" id="rww-fE-vro"/>
                                 </constraints>
+=======
+                                <rect key="frame" x="158" y="290" width="285" height="21"/>
+>>>>>>> origin/master
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhZ-sq-BFR">
+<<<<<<< HEAD
                                 <rect key="frame" x="158" y="330" width="285" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="XhZ-sq-BFR" secondAttribute="height" multiplier="95:7" id="4TL-VP-CRM"/>
                                     <constraint firstAttribute="height" constant="21" id="kB1-nU-lBK"/>
                                     <constraint firstAttribute="width" constant="285" id="u9m-p5-3Sd"/>
+=======
+                                <rect key="frame" x="158" y="373" width="285" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="lQr-Ev-nrk"/>
+>>>>>>> origin/master
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iET-c7-sgG">
+<<<<<<< HEAD
                                 <rect key="frame" x="158" y="393" width="285" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="285" id="K8D-wk-qhK"/>
                                     <constraint firstAttribute="height" constant="21" id="PRV-6p-UvF"/>
                                     <constraint firstAttribute="width" secondItem="iET-c7-sgG" secondAttribute="height" multiplier="95:7" id="Tny-C4-sGE"/>
                                 </constraints>
+=======
+                                <rect key="frame" x="158" y="459" width="285" height="21"/>
+>>>>>>> origin/master
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -589,6 +626,7 @@ This app aims to support the animals within the Oceanarium, and various other Aq
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="zpU-AO-TEe" firstAttribute="leading" secondItem="jqf-eU-Xsy" secondAttribute="leading" id="1m7-DM-XV8"/>
                             <constraint firstItem="XhZ-sq-BFR" firstAttribute="leading" secondItem="iET-c7-sgG" secondAttribute="leading" id="27O-78-Rs6"/>
                             <constraint firstItem="iET-c7-sgG" firstAttribute="centerX" secondItem="EOz-WF-nrz" secondAttribute="centerX" id="CBk-as-O8p"/>
@@ -605,6 +643,29 @@ This app aims to support the animals within the Oceanarium, and various other Aq
                     </view>
                     <navigationItem key="navigationItem" id="qeb-vz-2D6">
                         <barButtonItem key="rightBarButtonItem" title="Reset" style="done" id="6Qh-ic-Ged">
+=======
+                            <constraint firstItem="ozJ-nk-NBt" firstAttribute="centerY" secondItem="km1-7G-j7b" secondAttribute="centerY" id="3dH-i3-BKA"/>
+                            <constraint firstItem="iET-c7-sgG" firstAttribute="top" secondItem="XhZ-sq-BFR" secondAttribute="bottom" constant="65" id="6Zg-D9-dBV"/>
+                            <constraint firstItem="jqf-eU-Xsy" firstAttribute="trailing" secondItem="zpU-AO-TEe" secondAttribute="trailing" id="CPj-4L-1lT"/>
+                            <constraint firstItem="iET-c7-sgG" firstAttribute="centerX" secondItem="km1-7G-j7b" secondAttribute="centerX" id="DDW-WV-Q8e"/>
+                            <constraint firstItem="XhZ-sq-BFR" firstAttribute="leading" secondItem="ozJ-nk-NBt" secondAttribute="leading" id="Lgd-cO-0fX"/>
+                            <constraint firstItem="jqf-eU-Xsy" firstAttribute="top" secondItem="zpU-AO-TEe" secondAttribute="bottom" constant="57" id="MpK-eo-IDh"/>
+                            <constraint firstItem="XhZ-sq-BFR" firstAttribute="trailing" secondItem="iET-c7-sgG" secondAttribute="trailing" id="Nem-2r-WTK"/>
+                            <constraint firstItem="XhZ-sq-BFR" firstAttribute="leading" secondItem="iET-c7-sgG" secondAttribute="leading" id="O6p-2K-SSg"/>
+                            <constraint firstItem="jqf-eU-Xsy" firstAttribute="leading" secondItem="ozJ-nk-NBt" secondAttribute="leading" id="ZRH-gr-TkW"/>
+                            <constraint firstItem="XhZ-sq-BFR" firstAttribute="trailing" secondItem="ozJ-nk-NBt" secondAttribute="trailing" id="d3P-zb-ofi"/>
+                            <constraint firstItem="XhZ-sq-BFR" firstAttribute="top" secondItem="ozJ-nk-NBt" secondAttribute="bottom" constant="62" id="ep4-AT-fya"/>
+                            <constraint firstItem="zpU-AO-TEe" firstAttribute="leading" secondItem="jqf-eU-Xsy" secondAttribute="leading" id="gAv-WP-WBo"/>
+                            <constraint firstItem="ozJ-nk-NBt" firstAttribute="top" secondItem="jqf-eU-Xsy" secondAttribute="bottom" constant="61" id="gqm-cy-D4W"/>
+                            <constraint firstItem="jqf-eU-Xsy" firstAttribute="trailing" secondItem="ozJ-nk-NBt" secondAttribute="trailing" id="kvZ-Nj-hy0"/>
+                            <constraint firstItem="ITY-e0-Ajs" firstAttribute="top" secondItem="iET-c7-sgG" secondAttribute="bottom" constant="71" id="p9B-Ql-Som"/>
+                            <constraint firstItem="iET-c7-sgG" firstAttribute="centerX" secondItem="EOz-WF-nrz" secondAttribute="centerX" id="x0q-t7-dJa"/>
+                            <constraint firstItem="zpU-AO-TEe" firstAttribute="top" secondItem="o4z-db-bBH" secondAttribute="bottom" constant="66" id="xpS-EE-baf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qeb-vz-2D6">
+                        <barButtonItem key="rightBarButtonItem" title="Reset" style="plain" id="6Qh-ic-Ged">
+>>>>>>> origin/master
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Aok-a7-WF3">
                                 <rect key="frame" x="447" y="7" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
